@@ -111,8 +111,8 @@ class TicTacToeEnv(gym.Env):
         # Opponent play
         a = self.opponent_policy(self.state)
 
-        # Making move if there are moves left
-        if a is not None:
+        # Making move if there are moves left and the game is still ongoing
+        if a is not None and TicTacToeEnv.game_finished(self.state) == 0:
             TicTacToeEnv.make_move(self.state, a, 1 - self.player_color)
 
         reward = TicTacToeEnv.game_finished(self.state)
