@@ -166,7 +166,7 @@ positioned between two "mountains".
 The goal is to drive up the mountain on the right; however, the car's engine is not
 strong enough to scale the mountain in a single pass.
 Therefore, the only way to succeed is to drive back and forth to build up momentum.
-Here, agents can vary the magnitude of force applied in either direction. The reward 
+Here, agents can vary the magnitude of force applied in either direction. The reward
 is greater if less energy is spent to reach the goal.
 """,
     background="""\
@@ -280,6 +280,11 @@ add_task(
     summary='Hex played on a 9x9 board.',
 )
 
+add_task(
+    id='TicTacToe-v0',
+    group='board_game',
+    summary='Tic-Tac-Toe or Three in a Row'
+)
 
 # box2d
 

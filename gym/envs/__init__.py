@@ -420,6 +420,17 @@ register(
     },
 )
 
+register(
+    id='TicTacToe-v0',
+    entry_point='gym.envs.board_game:TicTacToeEnv',
+    kwargs={
+        'player_color': 'circle',
+        'opponent': 'random',
+        'observation_type': 'numpy3c',
+        'illegal_move_mode': 'lose',
+    },
+)
+
 # Debugging
 # ----------------------------------------
 
